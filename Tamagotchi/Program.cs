@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Weapon axe = new("Axe");
+
+int damage = axe.Attack();
+
+Console.WriteLine(damage);
+
+Console.ReadLine();
