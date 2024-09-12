@@ -2,7 +2,7 @@ public class Tamagotchi
 {
     private int hunger;
     private int boredom;
-    private List<string> words = new();
+    private List<string> words = new() {"Hi"};
     private bool isAlive;
     public string name;
 
@@ -13,6 +13,7 @@ public class Tamagotchi
 
     public void Feed()
     {
+        Console.WriteLine($"{name} eats");
         hunger =-3;
         if (hunger < 0)
         {
@@ -22,7 +23,8 @@ public class Tamagotchi
 
     public void Hi() 
     {
-
+        int wordNumber = Random.Shared.Next(words.Count);
+        Console.WriteLine($"{name} says {words[wordNumber]}");
         ReduceBoredom();
     }
 

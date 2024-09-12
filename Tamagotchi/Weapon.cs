@@ -1,3 +1,7 @@
+// Weapon axe = new("Axe");
+// int damage = axe.Attack();
+// Console.WriteLine(damage);
+
 public class Weapon
 {
     public string Name;
