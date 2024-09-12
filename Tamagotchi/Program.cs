@@ -1,7 +1,11 @@
-﻿Weapon axe = new("Axe");
+﻿// Weapon axe = new("Axe");
+// int damage = axe.Attack();
+// Console.WriteLine(damage);
 
-int damage = axe.Attack();
+Tamagotchi myTama = new();
 
-Console.WriteLine(damage);
+myTama.PrintStats();
+
+
 
 Console.ReadLine();
