@@ -46,5 +46,6 @@ while (myTama.GetAlive() == true)
 }
 
 Console.WriteLine($"How sad! {myTama.name} is dead!");
+Console.WriteLine("Press enter to end");
 
 Console.ReadLine();

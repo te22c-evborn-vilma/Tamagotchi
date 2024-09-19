@@ -10,31 +10,28 @@ public class Tamagotchi
     {
         isAlive = true;
     }
-
     public void Feed()
     {
+        int foodPoints = Random.Shared.Next(2,5);
         Console.WriteLine($"{name} eats");
         
-        hunger =- 3;
+        hunger = hunger - foodPoints;
         if (hunger < 0)
         {
             hunger = 0;
         }
     }
-
     public void Hi() 
     {
         int wordNumber = Random.Shared.Next(words.Count);
         Console.WriteLine($"{name} says {words[wordNumber]}");
         ReduceBoredom();
     }
-
     public void Teach(string word)
     {
         words.Add(word);
         ReduceBoredom();
     }
-
     public void Tick()
     {
         hunger++;
@@ -44,12 +41,10 @@ public class Tamagotchi
             isAlive = false;
         }
     }
-
     public void PrintStats()
     {
         Console.WriteLine($"{name} - Hunger: {hunger} || Boredom: {boredom}");
     }
-
     public bool GetAlive()
     {
         return isAlive;
