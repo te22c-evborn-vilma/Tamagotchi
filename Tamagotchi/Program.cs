@@ -8,14 +8,14 @@ Console.WriteLine($"{myTama.name} it is");
 while (myTama.GetAlive() == true)
 {
     Console.Clear();
-    
+
     myTama.PrintStats();
 
     Console.WriteLine("What do you want to do?");
-    Console.WriteLine($"1. Teach {myTama.name} a new word");
-    Console.WriteLine($"2. Talk to {myTama.name}");
-    Console.WriteLine($"3. Feed {myTama.name}");
-    Console.WriteLine("4. Do nothing");
+    Console.WriteLine($"1 - Teach {myTama.name} a new word");
+    Console.WriteLine($"2 - Talk to {myTama.name}");
+    Console.WriteLine($"3 - Feed {myTama.name}");
+    Console.WriteLine("4 - Do nothing");
 
     string doWhat = Console.ReadLine();
 

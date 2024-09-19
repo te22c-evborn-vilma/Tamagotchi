@@ -2,7 +2,7 @@ public class Tamagotchi
 {
     private int hunger;
     private int boredom;
-    private List<string> words = new() {"Hi"};
+    private List<string> words = new() {"Hi", "Thank you"};
     private bool isAlive;
     public string name;
 
