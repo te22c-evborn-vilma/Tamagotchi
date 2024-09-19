@@ -7,6 +7,8 @@ Console.WriteLine($"{myTama.name} it is");
 
 while (myTama.GetAlive() == true)
 {
+    Console.Clear();
+    
     myTama.PrintStats();
 
     Console.WriteLine("What do you want to do?");

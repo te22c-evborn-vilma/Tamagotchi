@@ -15,7 +15,7 @@ public class Tamagotchi
     {
         Console.WriteLine($"{name} eats");
         
-        hunger = Random.Shared.Next(1, 4);
+        hunger =- 3;
         if (hunger < 0)
         {
             hunger = 0;
@@ -47,7 +47,7 @@ public class Tamagotchi
 
     public void PrintStats()
     {
-        Console.WriteLine($"Hunger: {hunger} || Boredom: {boredom}");
+        Console.WriteLine($"{name} - Hunger: {hunger} || Boredom: {boredom}");
     }
 
     public bool GetAlive()
